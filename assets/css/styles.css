@@ -1,8 +1,7 @@
-:root {
-    --primary-color: #0A1128
-    
+:root{
+    --Primary-color: #000000;
+    --white-color: #FFFFFF;
 }
-
 
 *{
     margin: 0;
@@ -18,7 +17,7 @@ font-family: 'Open Sans', sans-serif;
 
 body{
     font-family: 'Open Sans', sans-serif;;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--primary-color);
 }
 h1, h2, h3, h4, h5, h6{
@@ -62,8 +61,16 @@ h6{
     color: var(--white-color);
 }
 
+.white-bg{
+   background: var(--white-color);
+}
+
 .main-content{
     max-width: 1200px;
     margin: 0 auto;
     
+}
+
+.section{
+    min-height: 100vh;
 }
