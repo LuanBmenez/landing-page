@@ -1,0 +1,33 @@
+.main-bg{
+    background-image: url('../images/main.SVG');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg{
+   background: var(--white-color);
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap)
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-spacing{
+    height: 65px;
+}
