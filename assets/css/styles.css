@@ -54,6 +54,10 @@ h6{
 }
 
 /*CLASSES GERAL*/
+a{
+    text-decoration: none;
+}
+
 .main-bg{
     background-image: url('../images/main.SVG');
     background-size: cover;
@@ -73,4 +77,36 @@ h6{
 
 .section{
     min-height: 100vh;
+}
+
+.menu{
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--Primary-color);
+}
+
+.menu h1 a {
+    color: inherit
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+display: block;
 }
