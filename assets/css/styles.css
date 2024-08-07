@@ -1,6 +1,8 @@
 :root{
     --Primary-color: #000000;
     --white-color: #FFFFFF;
+    --light-gray-color:#EEEEEE
+    --gap:3rem;
 }
 
 *{
@@ -86,6 +88,7 @@ a{
     left: 0;
     right: 0;
     width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
 }
 
 .menu-content{
@@ -110,8 +113,24 @@ a{
 }
 
 .menu ul li a {
-display: block;
-padding: 2rem;
-font-size: 1.8rem;
-color:var(--Primary-color);
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color:var(--Primary-color);
+    position: relative;
+    }
+
+.menu ul li a:after {
+content: '';
+position: absolute;
+bottom: 1rem;
+left: 25%;
+width: 0;
+height: 0.2rem;
+background: crimson;
+transition: all 300ms ease-in-out;
+    }
+
+.menu ul li a:hover::after {
+    width: 50%;
 }
